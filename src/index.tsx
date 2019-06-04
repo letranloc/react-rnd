@@ -145,6 +145,7 @@ export interface Props {
   cancel?: string;
   enableUserSelectHack?: boolean;
   scale?: number;
+  rotate?: number;
   [key: string]: any;
 }
 
@@ -543,6 +544,7 @@ export class Rnd extends React.Component<Props, State> {
       resizeHandleWrapperClass,
       resizeHandleWrapperStyle,
       scale,
+      rotate,
       ...resizableProps
     } = this.props;
     const defaultValue = this.props.default ? { ...this.props.default } : undefined;
@@ -583,6 +585,7 @@ export class Rnd extends React.Component<Props, State> {
         enableUserSelectHack={enableUserSelectHack}
         cancel={cancel}
         scale={scale}
+        rotate={rotate}
       >
         <Resizable
           {...resizableProps}

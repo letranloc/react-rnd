@@ -112,6 +112,7 @@ export interface Props {
     cancel?: string;
     enableUserSelectHack?: boolean;
     scale?: number;
+    rotate?: number;
     [key: string]: any;
 }
 interface DefaultProps {
